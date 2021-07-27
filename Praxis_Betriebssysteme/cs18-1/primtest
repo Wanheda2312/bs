@@ -1,0 +1,28 @@
+#!/bin/bash
+ZAHL=$1
+
+function PRIMTEST { # return value 0 --> Primzahl, 1 --> keine Primzahl
+P_ZAHL=$1	# wird als Parameter an Funktion übergeben
+if [ $P_ZAHL -le 1 ]; then return 1; fi	# Zahlen <=1 sind keine Primzahlen
+if [ $P_ZAHL -eq 2 ]; then return 0; fi # 2 ist eine Primzahl
+# gerade Zahlen außer 2 sind keine Primzahlen
+P_DIV_REST=$(( $P_ZAHL % 2 ))	# Rest der Division durch 2
+if [ $P_DIV_REST -eq 0 ]; then return 1; fi # gerade Zahlen sind keine Primzahlen (außer 2, vgl. oben)
+# ungerade Zahlen testen
+#P_imax=`echo "scale=0; sqrt($P_ZAHL)" | bc -l`
+P_imax=$(echo "scale=0; sqrt($P_ZAHL)" | bc -l)
+for ((P_i=3; P_i<=P_imax; P_i+=2))
+  do
+    P_DIV_REST=$(( $P_ZAHL % $P_i ))	# Rest der Division berechnen 
+    if [ $P_DIV_REST -eq 0 ]; then return 1; fi	# Teiler gefunden --> keine Primzahl
+  done
+return 0	# wenn kein Teiler gefunden --> Primzahl
+} # end function PRIMETEST
+
+if PRIMTEST $ZAHL
+  then
+    echo "$ZAHL ist Primzahl."
+  else
+    echo "$ZAHL ist KEINE Primzahl."
+  fi
+exit 0

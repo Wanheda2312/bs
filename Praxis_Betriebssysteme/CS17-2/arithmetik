@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then echo -n "A : "; read A;  else  A=$1; fi
+if [ -z "$2" ]; then echo -n "OP: "; read OP; else OP=$2; fi
+if [ -z "$3" ]; then echo -n "B : "; read B;  else  B=$3; fi
+
+# Ganzzahl
+#  RESULT=`expr $A "$OP" $B`	# "$OP" quoten, damit z.B. *, < ... nicht interpretiert wird
+#  RESULT=$(expr $A "$OP" $B)  	# andere Schreibweise für Befehl oben
+#  let  RESULT=( $A "$OP" $B )
+#  let  "RESULT=$A $OP $B"
+#RESULT=$(($A $OP $B))
+#  RESULT=$((A $OP B))		# bei Zahlen ist die Dereferenzierung in dieser Schreibweise optional
+
+# Fließkomma
+# RESULT=`echo "scale=2; $A $OP $B" | bc -l`
+# RESULT=$(echo "scale=15; $A $OP $B" | bc -l)
+RESULT=$(echo "scale=15; $A $OP $B" | bc -l | tr "." ",")	# Punkt durch Komma ersetzt
+
+echo "$A $OP $B = $RESULT"
+
+exit 0

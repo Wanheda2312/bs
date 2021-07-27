@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ -z $1 ]; then echo -n "Zahl a: "; read a; else a=$1; fi
+if [ -z $2 ]; then echo -n "Operator: "; read OP; else OP=$2; fi
+if [ -z $3 ]; then echo -n "Zahl b: "; read b; else b=$3; fi
+
+# RESULT=`expr $a "$OP" $b`
+# nur bash:
+# let RESULT=($a $OP $b)
+# let "RESULT=$a $OP $b"
+# RESULT=$(($a $OP $b))
+# RESULT=$((a $OP b))	# $ darf für Zahlen wegfallen, nicht für den Operator
+# RESULT=`echo "scale=2; $a $OP $b" | bc -l`	# scale=2 --> 2 Nachkommastellen
+RESULT=`echo "scale=2; $a $OP $b" | bc -l | tr "." ","`    # "," als Dezimaltrennzeichen
+
+echo "$a $OP $b = $RESULT"
+
+exit 0

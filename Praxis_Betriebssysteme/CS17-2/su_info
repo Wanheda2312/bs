@@ -1,0 +1,9 @@
+Kommandozeilenparameter: ./su - root  
+Passwort: GEHEIOM4321
+Hostname: linux-s78x
+Betriebssystem: Linux linux-s78x 4.4.120-45-default #1 SMP Wed Mar 14 20:51:49 UTC 2018 (623211f) x86_64 x86_64 x86_64 GNU/Linux
+IP-Adressen:
+          inet Adresse:10.1.103.100  Bcast:10.1.255.255  Maske:255.255.0.0
+          inet6 Adresse: fe80::ec4:7aff:fe30:b9ac/64 Gültigkeitsbereich:Verbindung
+          inet Adresse:127.0.0.1  Maske:255.0.0.0
+          inet6 Adresse: ::1/128 Gültigkeitsbereich:Maschine

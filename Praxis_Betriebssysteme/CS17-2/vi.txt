@@ -1,0 +1,38 @@
+<ESC>	Visual Mode (Kommandomodus), Standardmodus
+__________________________________________________
+
+<ESC><x>	Zeichen unter Cursor löschen
+<ESC><d><d>	Zeile unter Cursor löschen
+<ESC>
+	<h>	Cursor links
+	<j>	Cursor herunter
+	<k>	Cursor hoch
+	<l>	Cursor rechts
+
+Input Mode:
+__________
+
+<O>	Zeile oberhalb Cursor einfügen --> Input Mode
+<i>	Input Mode (Texteingabe)
+<o>	Zeile unterhalb Cursor einfügen --> Input Mode
+<a>	hinter Cursor einfügen --> Input Mode
+<s>	Zeichen ersetzen --> Input Mode
+<J>	Mit Zeile darunter zusammenführen 
+
+
+Ex Mode:
+________
+
+Speichern und beenden:
+
+<ESC><:><w><ENTER>	Datei speichern (write)
+<ESC><:><q><ENTER>	Datei schließen, vi beenden (quit)
+<ESC><:><w><q><ENTER>	Datei speichern und beenden
+<ESC><:><w><q><!><ENTER>	Datei speichern und beenden erzwingen
+
+Suchen:
+<ESC></><String>	Suche nach "String"
+	<n>		nächstes Vorkommen
+	<N>		letztes Vorkommen
+
+Quoten im Suchstring (z.B. Leerzeichen): \ maskiert das folgende Zeichen

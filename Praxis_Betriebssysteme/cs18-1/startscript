@@ -1,0 +1,65 @@
+#!/bin/bash
+CMD=$1
+SERVICE="xterm"
+SERVICE_BIN="/usr/bin/xterm"
+PID_FILE="xterm.pid"
+
+function STATUS {	# 0 --> running (PID-File vorhanden, Prozess vorhanden)
+			# 1 --> stopped (PID-File nicht vorhanden, kein Prozess)
+			# 2 --> dead (PID-File vorhanden, kein Prozess)
+if [ -s $PID_FILE ] 	# PID_FILE vorhanden und nicht leer
+  then
+    S_PID=`cat $PID_FILE`	# PID aus File in Variable laden
+    if [ $SERVICE = "$(ps -u $USER | grep "$S_PID" | awk '{ print $4 }')" ]  # gibt es einen Prozess zur PID
+			# hier müsste man bei der Suche noch den User ersetzen
+      then
+        return 0	# 0 --> running (PID-File vorhanden, Prozess vorhanden)
+      else
+        return 2	# 2 --> dead (PID-File vorhanden, kein Prozess)
+      fi
+  else
+    return 1		# 1 --> stopped (PID-File nicht vorhanden(, kein Prozess))
+			# eigentlich müsste man noch auf Prozess ohne PIF-File testen
+  fi
+
+} # end function STATUS
+
+case $CMD in
+  start) 	echo "Sevice $SERVICE starten..."
+		if ! STATUS # nicht starten, wenn running --> 0
+                  then
+                    $SERVICE_BIN &
+ 		    echo "$!" > $PID_FILE	# $! --> PID des letzten gestarten Prozesses
+		    echo "Service $SERVICE wurde mit PID `cat $PID_FILE` gestartet."
+                  else
+                    echo "Service $SERVICE läuft bereits."
+                  fi
+        	;;
+  stop)  	echo "Sevice $SERVICE anhalten..."
+		if STATUS	# anhalten nur, wenn running --> 0
+                  then
+                    kill -TERM $S_PID	# S_PID wurde von der function STATUS geladen (globale Variable)
+                    rm $PID_FILE
+                    echo "Service $SERVICE wurde angehalten."
+                  else
+        	    echo "Service $SERVICE war nicht gestartet."
+		    if [ -s $PID_FILE ]; then rm $PID_FILE; fi	# PID File löschen, falls dead
+                  fi
+		;;
+  status)  	echo "Status von Sevice $SERVICE ermitteln..."
+                STATUS
+                case $(echo $?) in
+                  0)	echo "$SERVICE ist running";;
+                  1)    echo "$SERVICE ist stopped";;
+                  2)    echo "$SERVICE ist dead";;
+                  esac
+        	;;
+  *)		echo "Usage: $0 { start | stop | status }"
+		;;
+  		esac
+
+# Test der function
+STATUS 
+# echo "Rückgabewert von STATUS: $?"
+# echo "S_PID = $S_PID"
+exit 0

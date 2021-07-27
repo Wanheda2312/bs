@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then echo -n "Zahl: "; read ZAHL; else ZAHL=$1; fi
+
+function QUADRAT {
+  Q_ZAHL=$(( $1 * $1 ))
+  return $Q_ZAHL
+}
+
+QUADRAT $ZAHL	# Funktion mit Parameter aufrufen
+echo "Das Quadrat von über Rückgabewert:     $ZAHL = $?" # Ausgabe über Rückgabewert auf 8 Bit beschränkt: max. 255
+echo "Das Quadrat von über globale Variable: $ZAHL = $Q_ZAHL" # Alle Variablen sind global
+
+exit 0

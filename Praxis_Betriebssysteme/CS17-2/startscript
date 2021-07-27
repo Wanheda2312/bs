@@ -1,0 +1,65 @@
+#!/bin/bash
+
+PARM=$1
+SERVICE="xterm"
+PID_FILE="pid_file"
+
+function SERVICE_STATUS {
+  S_PID=$( ps -a | grep $SERVICE | awk '{print $1}' )
+  if [  ! -z "$S_PID"  -a  -s $PID_FILE  ]	# wenn PID vorhanden und PID-File nicht leer
+    then
+      S_STATUS=0	# running
+    else
+      if [  -z "$S_PID"  -a  ! -s $PID_FILE  ] # keine PID und kein PID-File
+        then
+          S_STATUS=1	# stopped
+        else
+          S_STATUS=2	# dead --> hier müsste man genauer prüfen
+        fi
+    fi 
+  return $S_STATUS
+} # end SERVICE_STATUS
+
+case $PARM in
+  start)
+	echo "Service $SERVICE starten ..."
+	# Nur starten, wenn nicht running
+	if SERVICE_STATUS
+          then # hat 0 geliefert --> running
+            echo "$SERVICE is already running."
+          else
+            $SERVICE &
+	    echo $! > $PID_FILE	# $! liefert die PID des letzten Prozesses
+	    echo "$SERVICE was started."
+          fi
+	;;
+  stop)
+	echo "Service $SERVICE anhalten ..."
+	# Nur anhalten, wenn running (oder ggf. dead)
+	if SERVICE_STATUS
+          then # hat 0 geliefert --> running
+            kill -TERM $S_PID
+	    rm $PID_FILE
+            echo "$SERVICE was stopped."
+          else
+            echo "$SERVICE is not running."
+          fi
+        ;;
+  status)
+        echo "Status von $SERVICE ..."
+	# Status kann sein: 
+	# 0: running 	(PID und PID-File vorhanden)
+	# 1: stopped	(keine PID, kein PID-File vorhanden)
+	# 2: dead 	(keine PID, aber PID-File vorhanden)
+	SERVICE_STATUS
+	case $? in
+		0) echo "$SERVICE is running";;
+                1) echo "$SERVICE is stopped";;
+                2) echo "$SERVICE is dead";;
+          esac
+        ;;
+  *)
+	echo "Usage: $SERVICE (start|stop|status)"
+  esac
+
+exit 0

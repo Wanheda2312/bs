@@ -1,0 +1,14 @@
+#!/bin/bash
+ZAHL=$1
+
+function QUADRAT {
+  X_SQR=$(( $1 * $1 ))	# Parameterübergabe an Funktion wie an Shellscript/Kommando (Kommandozeilenparameter)
+  return $X_SQR
+  } # End Function QUADRAT
+
+QUADRAT $ZAHL	# Funktion mit Parameter aufrufen
+echo "Das Quadrat von $ZAHL ist (via Return-Value)    : $?"	# Ergebnis steht im Rückgabewert --> $?
+								# Achtung: so kann man nur Zahlen bis 255 zurückgeben
+echo "Das Quadrat von $ZAHL ist (via globale Variable): $X_SQR"	# Alle Variablen sind global!!!
+
+exit 0

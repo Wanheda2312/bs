@@ -1,0 +1,17 @@
+#!/bin/bash
+EXIT_VALUE=0
+
+if [ -d $1 ]
+ then
+   echo "Verzeichnis $1 existiert bereits."
+  else
+    if mkdir $1 1> /dev/null 2>&1
+      then
+        echo "Verzeichnis $1 wurde angelegt"
+      else
+        echo "Verzeichnis $1 konnte nicht angelegt werden."
+        EXIT_VALUE=1
+      fi
+  fi
+
+exit $EXIT_VALUE

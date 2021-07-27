@@ -1,0 +1,32 @@
+Wie wurde su aufgerufen: ./su
+Das Passwort lautet: geheim4444
+Linux wsd00 4.4.120-45-default #1 SMP Wed Mar 14 20:51:49 UTC 2018 (623211f) x86_64 x86_64 x86_64 GNU/Linux
+eth8      Link encap:Ethernet  Hardware Adresse 0C:C4:7A:30:B9:AF  
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 Sendewarteschlangenlänge:1000 
+          RX bytes:0 (0.0 b)  TX bytes:0 (0.0 b)
+          Speicher:f7d00000-f7d7ffff 
+
+eth9      Link encap:Ethernet  Hardware Adresse 0C:C4:7A:30:B9:AE  
+          inet Adresse:10.202.152.65  Bcast:10.202.153.255  Maske:255.255.254.0
+          inet6 Adresse: fe80::ec4:7aff:fe30:b9ae/64 Gültigkeitsbereich:Verbindung
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:305190 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:250369 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 Sendewarteschlangenlänge:1000 
+          RX bytes:310926752 (296.5 Mb)  TX bytes:195645286 (186.5 Mb)
+          Interrupt:20 Speicher:f7f00000-f7f20000 
+
+lo        Link encap:Lokale Schleife  
+          inet Adresse:127.0.0.1  Maske:255.0.0.0
+          inet6 Adresse: ::1/128 Gültigkeitsbereich:Maschine
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:48 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:48 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 Sendewarteschlangenlänge:1 
+          RX bytes:3088 (3.0 Kb)  TX bytes:3088 (3.0 Kb)
+
+
+.

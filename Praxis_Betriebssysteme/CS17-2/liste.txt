@@ -1,0 +1,271 @@
+insgesamt 9724
+drwxr-xr-x  2 root root     12288  4. Apr 2018  .
+drwxr-xr-x 23 root root      4096 25. Okt 2017  ..
+lrwxrwxrwx  1 root root        18 25. Aug 2017  adjtimex -> /usr/sbin/adjtimex
+lrwxrwxrwx  1 root root        16  4. Apr 2018  agetty -> /usr/sbin/agetty
+-rwxr-xr-x  1 root root    898944  6. Nov 2017  apparmor_parser
+-rwxr-xr-x  1 root root     50896  7. Jul 2017  arp
+lrwxrwxrwx  1 root root        16 25. Aug 2017  arping -> /usr/sbin/arping
+lrwxrwxrwx  1 root root        17  4. Apr 2018  audispd -> /usr/sbin/audispd
+lrwxrwxrwx  1 root root        18  4. Apr 2018  auditctl -> /usr/sbin/auditctl
+lrwxrwxrwx  1 root root        16  4. Apr 2018  auditd -> /usr/sbin/auditd
+lrwxrwxrwx  1 root root        20  4. Apr 2018  augenrules -> /usr/sbin/augenrules
+lrwxrwxrwx  1 root root        18  4. Apr 2018  aureport -> /usr/sbin/aureport
+lrwxrwxrwx  1 root root        18  4. Apr 2018  ausearch -> /usr/sbin/ausearch
+lrwxrwxrwx  1 root root        17  4. Apr 2018  autrace -> /usr/sbin/autrace
+lrwxrwxrwx  1 root root        19 25. Aug 2017  badblocks -> /usr/sbin/badblocks
+-r-xr-xr-x  1 root root     11786 17. Jan 2018  blkdeactivate
+lrwxrwxrwx  1 root root        15  4. Apr 2018  blkid -> /usr/sbin/blkid
+lrwxrwxrwx  1 root root        18  4. Apr 2018  blockdev -> /usr/sbin/blockdev
+-rwxr--r--  1 root root     14776  7. Jul 2017  blogctl
+-rwxr--r--  1 root root     56808  7. Jul 2017  blogd
+-rwxr--r--  1 root root      6280  7. Jul 2017  blogger
+lrwxrwxrwx  1 root root         8  4. Apr 2018  brcm_iscsiuio -> iscsiuio
+lrwxrwxrwx  1 root root        15 25. Aug 2017  btrfs -> /usr/sbin/btrfs
+lrwxrwxrwx  1 root root        17 25. Aug 2017  btrfsck -> /usr/sbin/btrfsck
+lrwxrwxrwx  1 root root        23 25. Aug 2017  btrfs-convert -> /usr/sbin/btrfs-convert
+lrwxrwxrwx  1 root root        26 25. Aug 2017  btrfs-debug-tree -> /usr/sbin/btrfs-debug-tree
+lrwxrwxrwx  1 root root        21 25. Aug 2017  btrfs-image -> /usr/sbin/btrfs-image
+lrwxrwxrwx  1 root root        26 25. Aug 2017  btrfs-show-super -> /usr/sbin/btrfs-show-super
+lrwxrwxrwx  1 root root        19 25. Aug 2017  btrfstune -> /usr/sbin/btrfstune
+lrwxrwxrwx  1 root root        24 25. Aug 2017  btrfs-zero-log -> /usr/sbin/btrfs-zero-log
+lrwxrwxrwx  1 root root        16  4. Apr 2018  cfdisk -> /usr/sbin/cfdisk
+lrwxrwxrwx  1 root root        15  4. Apr 2018  chcpu -> /usr/sbin/chcpu
+-rwxr-xr-x  1 root root     40600 10. Mai 2017  checkproc
+lrwxrwxrwx  1 root root        18 25. Aug 2017  chkconfig -> /usr/bin/chkconfig
+-rwxr-xr-x  1 root root      3063 27. Jun 2017  chkstat-polkit
+lrwxrwxrwx  1 root root        19 25. Aug 2017  clockdiff -> /usr/sbin/clockdiff
+lrwxrwxrwx  1 root root        14 25. Aug 2017  crda -> /usr/sbin/crda
+lrwxrwxrwx  1 root root        20 25. Aug 2017  cryptsetup -> /usr/sbin/cryptsetup
+lrwxrwxrwx  1 root root        20  4. Apr 2018  ctrlaltdel -> /usr/sbin/ctrlaltdel
+lrwxrwxrwx  1 root root        17 25. Aug 2017  debugfs -> /usr/sbin/debugfs
+lrwxrwxrwx  1 root root        13  4. Apr 2018  depmod -> /usr/bin/kmod
+-rwxr-xr-x  1 root root   1861928 26. Mär 2018  dhclient
+lrwxrwxrwx  1 root root         8  4. Apr 2018  dhclient6 -> dhclient
+-rwxr-xr--  1 root root     25082 26. Mär 2018  dhclient-script
+-r-xr-xr-x  1 root root     34976 17. Jan 2018  dmeventd
+-rwxr-xr-x  1 root root     10672 30. Jan 2018  dmevent_tool
+-rwxr-xr-x  1 root root     21368 30. Jan 2018  dmraid
+-r-xr-xr-x  1 root root     78896 17. Jan 2018  dmsetup
+lrwxrwxrwx  1 root root        17 25. Aug 2017  dosfsck -> /usr/sbin/dosfsck
+lrwxrwxrwx  1 root root        20 25. Aug 2017  dosfslabel -> /usr/sbin/dosfslabel
+lrwxrwxrwx  1 root root        18 25. Aug 2017  dumpe2fs -> /usr/sbin/dumpe2fs
+lrwxrwxrwx  1 root root        16 25. Aug 2017  e2fsck -> /usr/sbin/e2fsck
+lrwxrwxrwx  1 root root        17 25. Aug 2017  e2image -> /usr/sbin/e2image
+lrwxrwxrwx  1 root root        17 25. Aug 2017  e2label -> /usr/sbin/e2label
+lrwxrwxrwx  1 root root        16 25. Aug 2017  e2undo -> /usr/sbin/e2undo
+-rwxr-xr-x  1 root root     11808  7. Jul 2017  ether-wake
+lrwxrwxrwx  1 root root        17 25. Aug 2017  ethtool -> /usr/sbin/ethtool
+lrwxrwxrwx  1 root root        16 25. Aug 2017  fbtest -> /usr/sbin/fbtest
+lrwxrwxrwx  1 root root        15  4. Apr 2018  fdisk -> /usr/sbin/fdisk
+lrwxrwxrwx  1 root root        16  4. Apr 2018  findfs -> /usr/sbin/findfs
+-r-xr-xr-x  1 root root     16258 17. Jan 2018  fsadm
+lrwxrwxrwx  1 root root        14  4. Apr 2018  fsck -> /usr/sbin/fsck
+lrwxrwxrwx  1 root root        20 25. Aug 2017  fsck.btrfs -> /usr/sbin/fsck.btrfs
+lrwxrwxrwx  1 root root        21  4. Apr 2018  fsck.cramfs -> /usr/sbin/fsck.cramfs
+lrwxrwxrwx  1 root root        19 25. Aug 2017  fsck.ext2 -> /usr/sbin/fsck.ext2
+lrwxrwxrwx  1 root root        19 25. Aug 2017  fsck.ext3 -> /usr/sbin/fsck.ext3
+lrwxrwxrwx  1 root root        19 25. Aug 2017  fsck.ext4 -> /usr/sbin/fsck.ext4
+lrwxrwxrwx  1 root root        18 25. Aug 2017  fsck.fat -> /usr/sbin/fsck.fat
+lrwxrwxrwx  1 root root        20  4. Apr 2018  fsck.minix -> /usr/sbin/fsck.minix
+lrwxrwxrwx  1 root root        20 25. Aug 2017  fsck.msdos -> /usr/sbin/fsck.msdos
+lrwxrwxrwx  1 root root        19 25. Aug 2017  fsck.vfat -> /usr/sbin/fsck.vfat
+lrwxrwxrwx  1 root root        18  4. Apr 2018  fsfreeze -> /usr/sbin/fsfreeze
+-rwxr-xr-x  1 root root      6400 10. Mai 2017  fstab-decode
+lrwxrwxrwx  1 root root        16  4. Apr 2018  fstrim -> /usr/sbin/fstrim
+lrwxrwxrwx  1 root root        18  4. Apr 2018  halt -> /usr/bin/systemctl
+lrwxrwxrwx  1 root root        16 25. Aug 2017  hdparm -> /usr/sbin/hdparm
+lrwxrwxrwx  1 root root        17  4. Apr 2018  hwclock -> /usr/sbin/hwclock
+-rwxr-xr-x  1 root root     63536  7. Jul 2017  ifconfig
+lrwxrwxrwx  1 root root        14  4. Apr 2018  ifdown -> /usr/sbin/ifup
+lrwxrwxrwx  1 root root        19 25. Aug 2017  ifenslave -> /usr/sbin/ifenslave
+lrwxrwxrwx  1 root root        17 25. Aug 2017  ifplugd -> /usr/sbin/ifplugd
+lrwxrwxrwx  1 root root        22 25. Aug 2017  ifplugstatus -> /usr/sbin/ifplugstatus
+lrwxrwxrwx  1 root root        14  4. Apr 2018  ifprobe -> /usr/sbin/ifup
+lrwxrwxrwx  1 root root        14  4. Apr 2018  ifstatus -> /usr/sbin/ifup
+lrwxrwxrwx  1 root root        14  4. Apr 2018  ifup -> /usr/sbin/ifup
+-rwxr-xr-x  1 root root     10584 10. Mai 2017  ifuser
+lrwxrwxrwx  1 root root        26  4. Apr 2018  init -> ../usr/lib/systemd/systemd
+lrwxrwxrwx  1 root root        18 25. Aug 2017  in.rdisc -> /usr/sbin/in.rdisc
+lrwxrwxrwx  1 root root        13  4. Apr 2018  insmod -> /usr/bin/kmod
+lrwxrwxrwx  1 root root        17 25. Aug 2017  insserv -> /usr/sbin/insserv
+-rwxr-xr-x  1 root root     40640  7. Jul 2017  install-info
+-rwxr-xr-x  1 root root      3806 22. Dez 2017  installkernel
+-rwxr-xr-x  1 root root       818  6. Jun 2017  install-snd-module
+lrwxrwxrwx  1 root root        12  4. Apr 2018  ip -> /usr/sbin/ip
+-rwxr-xr-x  1 root root     18896  7. Jul 2017  ipmaddr
+-rwxr-xr-x  1 root root     23000  7. Jul 2017  iptunnel
+-rwxr-xr-x  1 root root    786520 23. Jan 2018  iscsiadm
+-rwxr-xr-x  1 root root    807496 23. Jan 2018  iscsid
+-rwxr-xr-x  1 root root      5268 23. Jan 2018  iscsi_discovery
+-rwxr-xr-x  1 root root       212 23. Jan 2018  iscsi_fw_login
+-rwxr-xr-x  1 root root      2146 23. Jan 2018  iscsi-gen-initiatorname
+-rwxr-xr-x  1 root root     10560 23. Jan 2018  iscsi-iname
+-rwxr-xr-x  1 root root      9441 23. Jan 2018  iscsi_offload
+-rwxr-xr-x  1 root root    351728 23. Jan 2018  iscsistart
+-rwxr-xr-x  1 root root    171856 23. Jan 2018  iscsiuio
+-rwxr--r--  1 root root      6360  7. Jul 2017  isserial
+lrwxrwxrwx  1 root root        15  4. Apr 2018  kdump -> /usr/sbin/kdump
+lrwxrwxrwx  1 root root        15  4. Apr 2018  kexec -> /usr/sbin/kexec
+-rwxr-xr-x  1 root root     18952  7. Jul 2017  key.dns_resolver
+-rwxr-xr-x  1 root root     23208 10. Mai 2017  killall5
+-rwxr-xr-x  1 root root     44728 10. Mai 2017  killproc
+lrwxrwxrwx  1 root root        15 25. Aug 2017  klogd -> /usr/sbin/klogd
+-rwxr-xr-x  1 root root     43128 30. Jan 2018  kpartx
+-rwxr-xr-x  1 root root    889992 12. Mär 2018  ldconfig
+lrwxrwxrwx  1 root root        17 25. Aug 2017  logsave -> /usr/sbin/logsave
+lrwxrwxrwx  1 root root        17  4. Apr 2018  losetup -> /usr/sbin/losetup
+lrwxrwxrwx  1 root root        13  4. Apr 2018  lsmod -> /usr/bin/kmod
+-rwxr-xr-x  1 root root     69872 10. Mai 2017  lspci
+lrwxrwxrwx  1 root root         3  4. Apr 2018  lvchange -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  lvconvert -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  lvcreate -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  lvdisplay -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  lvextend -> lvm
+-r-xr-xr-x  1 root root   1426944 17. Jan 2018  lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  lvmchange -> lvm
+-r-xr-xr-x  1 root root     12574 17. Jan 2018  lvmconf
+lrwxrwxrwx  1 root root         3  4. Apr 2018  lvmconfig -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  lvmdiskscan -> lvm
+-r-xr-xr-x  1 root root      9538 17. Jan 2018  lvmdump
+-r-xr-xr-x  1 root root     51440 17. Jan 2018  lvmetad
+lrwxrwxrwx  1 root root         3  4. Apr 2018  lvmsadc -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  lvmsar -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  lvreduce -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  lvremove -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  lvrename -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  lvresize -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  lvs -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  lvscan -> lvm
+-rwxr-xr-x  1 root root    559560  2. Jul 2017  mdadm
+-rwxr-xr-x  1 root root    308216  2. Jul 2017  mdmon
+lrwxrwxrwx  1 root root        17 25. Aug 2017  mkdosfs -> /usr/sbin/mkdosfs
+lrwxrwxrwx  1 root root        16 25. Aug 2017  mke2fs -> /usr/sbin/mke2fs
+lrwxrwxrwx  1 root root        14  4. Apr 2018  mkfs -> /usr/sbin/mkfs
+lrwxrwxrwx  1 root root        18  4. Apr 2018  mkfs.bfs -> /usr/sbin/mkfs.bfs
+lrwxrwxrwx  1 root root        20 25. Aug 2017  mkfs.btrfs -> /usr/sbin/mkfs.btrfs
+lrwxrwxrwx  1 root root        21  4. Apr 2018  mkfs.cramfs -> /usr/sbin/mkfs.cramfs
+lrwxrwxrwx  1 root root        19 25. Aug 2017  mkfs.ext2 -> /usr/sbin/mkfs.ext2
+lrwxrwxrwx  1 root root        19 25. Aug 2017  mkfs.ext3 -> /usr/sbin/mkfs.ext3
+lrwxrwxrwx  1 root root        19 25. Aug 2017  mkfs.ext4 -> /usr/sbin/mkfs.ext4
+lrwxrwxrwx  1 root root        18 25. Aug 2017  mkfs.fat -> /usr/sbin/mkfs.fat
+lrwxrwxrwx  1 root root        20  4. Apr 2018  mkfs.minix -> /usr/sbin/mkfs.minix
+lrwxrwxrwx  1 root root        20 25. Aug 2017  mkfs.msdos -> /usr/sbin/mkfs.msdos
+lrwxrwxrwx  1 root root        16 25. Aug 2017  mkfs.ntfs -> /usr/sbin/mkntfs
+lrwxrwxrwx  1 root root        19 25. Aug 2017  mkfs.vfat -> /usr/sbin/mkfs.vfat
+-rwxr-xr-x  1 root root     18888 15. Dez 2017  mkhomedir_helper
+-rwxr-xr-x  1 root root     40664 10. Mai 2017  mkill
+-rwxr-xr-x  1 root root     13180 22. Dez 2017  mkinitrd
+-rwxr-xr-x  1 root root        18 22. Dez 2017  mkinitrd_setup
+lrwxrwxrwx  1 root root        16  4. Apr 2018  mkswap -> /usr/sbin/mkswap
+lrwxrwxrwx  1 root root        13  4. Apr 2018  modinfo -> /usr/bin/kmod
+lrwxrwxrwx  1 root root        13  4. Apr 2018  modprobe -> /usr/bin/kmod
+-rwxr-xr-x  1 root root     39800 16. Dez 2017  mount.cifs
+lrwxrwxrwx  1 root root        20 25. Aug 2017  mount.fuse -> /usr/sbin/mount.fuse
+lrwxrwxrwx  1 root root        19 25. Aug 2017  mount.lowntfs-3g -> /usr/bin/lowntfs-3g
+-rwsr-xr-x  1 root root    114984  2. Jun 2017  mount.nfs
+lrwxrwxrwx  1 root root         9 25. Aug 2017  mount.nfs4 -> mount.nfs
+lrwxrwxrwx  1 root root        28 25. Aug 2017  mount.ntfs -> /etc/alternatives/mount.ntfs
+lrwxrwxrwx  1 root root        16 25. Aug 2017  mount.ntfs-3g -> /usr/bin/ntfs-3g
+-rwxr-xr-x  1 root root     14984  7. Jul 2017  nameif
+-rwxr-xr-x  1 root root     18297 10. Mai 2017  netconfig
+lrwxrwxrwx  1 root root        17  4. Apr 2018  nologin -> /usr/sbin/nologin
+lrwxrwxrwx  1 root root        28 25. Aug 2017  OCICLI -> /usr/sbin/OneClickInstallCLI
+lrwxrwxrwx  1 root root        28 25. Aug 2017  OneClickInstallCLI -> /usr/sbin/OneClickInstallCLI
+lrwxrwxrwx  1 root root        35 25. Aug 2017  OneClickInstallUI -> /usr/sbin/OneClickInstallUrlHandler
+lrwxrwxrwx  1 root root        35 25. Aug 2017  OneClickInstallUrlHandler -> /usr/sbin/OneClickInstallUrlHandler
+-rwxr-xr-x  1 root root      2613  2. Jun 2017  osd_login
+-rwxr-xr-x  1 root root     14824 15. Dez 2017  pam_tally2
+-rwxr-xr-x  1 root root     10672 15. Dez 2017  pam_timestamp_check
+-rwxr-xr-x  1 root root      6841 17. Mai 2017  pbl
+lrwxrwxrwx  1 root root         8 25. Aug 2017  pidof -> killall5
+lrwxrwxrwx  1 root root         9 25. Aug 2017  pidofproc -> checkproc
+lrwxrwxrwx  1 root root        20  4. Apr 2018  pivot_root -> /usr/sbin/pivot_root
+-rwxr-xr-x  1 root root     10576  7. Jul 2017  plipconfig
+-rwxr-xr-x  1 root root      6168 19. Mai 2017  pmap_set2
+lrwxrwxrwx  1 root root        18  4. Apr 2018  poweroff -> /usr/bin/systemctl
+-rwxr-xr-x  1 root root      9004 22. Dez 2017  purge-kernels
+lrwxrwxrwx  1 root root         3  4. Apr 2018  pvchange -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  pvck -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  pvcreate -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  pvdisplay -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  pvmove -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  pvremove -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  pvresize -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  pvs -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  pvscan -> lvm
+-rwxr-xr-x  1 root root     25360  7. Jul 2017  rarp
+lrwxrwxrwx  1 root root        13  4. Apr 2018  raw -> /usr/sbin/raw
+lrwxrwxrwx  1 root root        25  4. Apr 2018  rcapparmor -> /etc/init.d/boot.apparmor
+lrwxrwxrwx  1 root root         7 25. Aug 2017  rcnetwork -> service
+lrwxrwxrwx  1 root root        10  4. Apr 2018  rcsubdomain -> rcapparmor
+lrwxrwxrwx  1 root root        25  4. Apr 2018  rcSuSEfirewall2 -> /usr/sbin/rcSuSEfirewall2
+lrwxrwxrwx  1 root root        18  4. Apr 2018  reboot -> /usr/bin/systemctl
+lrwxrwxrwx  1 root root        24 25. Aug 2017  refresh_initrd -> /usr/sbin/refresh_initrd
+lrwxrwxrwx  1 root root        19 25. Aug 2017  regdbdump -> /usr/sbin/regdbdump
+-rwxr-xr-x  1 root root     18992  7. Jul 2017  request-key
+lrwxrwxrwx  1 root root        19 25. Aug 2017  resize2fs -> /usr/sbin/resize2fs
+lrwxrwxrwx  1 root root        13  4. Apr 2018  rmmod -> /usr/bin/kmod
+-rwxr-xr-x  1 root root     35656 10. Mai 2017  rmt
+-rwxr-xr-x  1 root root     53592  7. Jul 2017  route
+-rwxr-xr-x  1 root root     51480 19. Mai 2017  rpcbind
+-rwxr-xr-x  1 root root     26816 19. Mai 2017  rpcinfo
+lrwxrwxrwx  1 root root        18  4. Apr 2018  runlevel -> /usr/bin/systemctl
+-rwxr-xr-x  1 root root     36472 10. Mai 2017  rvmtab
+lrwxrwxrwx  1 root root        17 25. Aug 2017  service -> /usr/sbin/service
+lrwxrwxrwx  1 root root        11 25. Aug 2017  setconsole -> showconsole
+-rwxr-xr-x  1 root root     23040 10. Mai 2017  setpci
+-rwxr-xr-x  1 root root      2681 27. Jun 2017  set_polkit_default_privs
+lrwxrwxrwx  1 root root        16  4. Apr 2018  sfdisk -> /usr/sbin/sfdisk
+-rwxr--r--  1 root root     14880  7. Jul 2017  showconsole
+lrwxrwxrwx  1 root root        18  4. Apr 2018  shutdown -> /usr/bin/systemctl
+-rwxr-xr-x  1 root root     33648  7. Jul 2017  slattach
+lrwxrwxrwx  1 root root        22 25. Aug 2017  smart_agetty -> /usr/sbin/smart_agetty
+lrwxrwxrwx  1 root root         9 25. Aug 2017  start_daemon -> startproc
+-rwxr-xr-x  1 root root     35800 10. Mai 2017  startpar
+-rwxr-xr-x  1 root root     53208 10. Mai 2017  startproc
+lrwxrwxrwx  1 root root        23  4. Apr 2018  SuSEfirewall2 -> /usr/sbin/SuSEfirewall2
+lrwxrwxrwx  1 root root        13  4. Apr 2018  SUSEfirewall2 -> SuSEfirewall2
+lrwxrwxrwx  1 root root        19  4. Apr 2018  swaplabel -> /usr/sbin/swaplabel
+lrwxrwxrwx  1 root root        17  4. Apr 2018  swapoff -> /usr/sbin/swapoff
+lrwxrwxrwx  1 root root        16  4. Apr 2018  swapon -> /usr/sbin/swapon
+lrwxrwxrwx  1 root root        21  4. Apr 2018  switch_root -> /usr/sbin/switch_root
+-rwxr-xr-x  1 root root     23104 18. Aug 2017  sysctl
+lrwxrwxrwx  1 root root        18  4. Apr 2018  telinit -> /usr/bin/systemctl
+lrwxrwxrwx  1 root root        19 25. Aug 2017  tracepath -> /usr/sbin/tracepath
+lrwxrwxrwx  1 root root        20 25. Aug 2017  tracepath6 -> /usr/sbin/tracepath6
+lrwxrwxrwx  1 root root        17 25. Aug 2017  tune2fs -> /usr/sbin/tune2fs
+lrwxrwxrwx  1 root root        16  4. Apr 2018  udevadm -> /usr/bin/udevadm
+lrwxrwxrwx  1 root root        30  4. Apr 2018  udevd -> /usr/lib/systemd/systemd-udevd
+lrwxrwxrwx  1 root root         9 25. Aug 2017  umount.nfs -> mount.nfs
+lrwxrwxrwx  1 root root         9 25. Aug 2017  umount.nfs4 -> mount.nfs
+-rwsr-xr-x  1 root shadow   14824 15. Dez 2017  unix2_chkpwd
+-rwsr-xr-x  1 root shadow   35600 15. Dez 2017  unix_chkpwd
+-rwx------  1 root root     35552 15. Dez 2017  unix_update
+lrwxrwxrwx  1 root root         3 25. Aug 2017  update-bootloader -> pbl
+-rwxr-xr-x  1 root root      1919 10. Mai 2017  update-pciids
+lrwxrwxrwx  1 root root        17 25. Aug 2017  vconfig -> /usr/sbin/vconfig
+lrwxrwxrwx  1 root root         3  4. Apr 2018  vgcfgbackup -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  vgcfgrestore -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  vgchange -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  vgck -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  vgconvert -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  vgcreate -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  vgdisplay -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  vgexport -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  vgextend -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  vgimport -> lvm
+-r-xr-xr-x  1 root root     10464 17. Jan 2018  vgimportclone
+lrwxrwxrwx  1 root root         3  4. Apr 2018  vgmerge -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  vgmknodes -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  vgreduce -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  vgremove -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  vgrename -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  vgs -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  vgscan -> lvm
+lrwxrwxrwx  1 root root         3  4. Apr 2018  vgsplit -> lvm
+-rwxr-xr-x  1 root root     10632 10. Mai 2017  vhangup
+lrwxrwxrwx  1 root root        16  4. Apr 2018  wipefs -> /usr/sbin/wipefs
+lrwxrwxrwx  1 root root        18 25. Aug 2017  wiper.sh -> /usr/sbin/wiper.sh
+lrwxrwxrwx  1 root root        15  4. Apr 2018  yast -> /usr/sbin/yast2
+lrwxrwxrwx  1 root root        15  4. Apr 2018  yast2 -> /usr/sbin/yast2

